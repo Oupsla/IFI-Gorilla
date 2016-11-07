@@ -12,7 +12,6 @@ type User struct {
 	Email     string        `bson: "email" json: "email"`
 }
 
-// GetID returns the ID of an Spirit as a string
 func (user *User) GetID() string {
 	return user.ID.Hex()
 }

@@ -4,7 +4,6 @@ import (
 	//"github.com/bnjjj/go_api/models"
 	"github.com/bnjjj/go_api/utils"
 
-	"fmt"
 	"net/http"
 	"strings"
 )

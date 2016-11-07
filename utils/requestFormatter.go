@@ -31,7 +31,6 @@ func SendError(res http.ResponseWriter, errorInfos CustomError) {
 	}
 }
 
-//TODO: add a function in order to make a system call
 func MakeCommand(name string, args []string) (string, error) {
 	customCmd := exec.Command(name, args...)
 	response, err := customCmd.Output()
