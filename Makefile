@@ -20,6 +20,7 @@ help:
 	@echo
 	@echo "----- BUILD ------------------------------------------------------------------------------"
 	@echo "all                  clean and build the project"
+	@echo "deploy               deploy the binary package dependency"
 	@echo "clean                clean the project"
 	@echo "dependencies         download the dependencies"
 	@echo "build                build all libraries and binaries"
@@ -55,8 +56,11 @@ dependencies:
 	@go get -u github.com/golang/lint/golint
 	@echo "----- DONE --------------------------------------------------------------------------------"
 
-build: format
-	@go build -o ifi main.go
+deploy:
+	@sh deploy.sh
+
+build: format deploy
+	@go build -o ifi $(MAIN_FILE)
 
 format:
 	@go fmt $(PKGS)

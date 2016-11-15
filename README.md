@@ -1,9 +1,16 @@
 # IFI-Gorilla
 
-## How to run
+## Installation  
+```bash
+$ make dependencies
+$ make deploy
+```
+
+
+## How to run  
 
 ```bash
 
-$ go run main.go
+$ make start
 
 ```
