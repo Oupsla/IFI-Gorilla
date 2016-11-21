@@ -13,19 +13,21 @@ tar xvf go1.7.3.linux-amd64.tar.gz
 
 Déplacement :
 ```
-mv go /usr/local
+mkdir $HOME/bin
+mv go /$HOME/bin
 ```
 
 Ajout au profile (ou .bashrc)
 ```
-vim ~/.profile
+vim ~/.bashrc
 ```
 ```
 export GOPATH=$HOME/golang
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+export GOROOT=$HOME/bin/go
+export PATH=/$HOME/bin/go/bin:$GOPATH/bin:$PATH
 ```
 ```
-vim ~/.profile
+source ~/.bashrc
 ```
 
 Création du workspace golang (**modifier user par votre nom d'utilisateur github**)
@@ -39,7 +41,6 @@ Vous pouvez maintenant écrire votre premier programme go avec votre éditeur de
 vim hello.go
 ```
 
-
 Pour lancer votre programme
 ```
 go run hello.go
@@ -47,7 +48,7 @@ go run hello.go
 
 Pour le compiler
 ```
-go install hello.go
+go build hello.go
 ```
 
 ## Exercice
