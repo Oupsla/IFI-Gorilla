@@ -50,5 +50,12 @@ Pour le compiler
 go install hello.go
 ```
 
+## Exercice
+
+Produire un hello world avec les caractéristiques suivantes :
+- La string 'Hello world' est définie dans une constante
+- Une boucle allant de 0 jusqu'à 9 avec un for
+- Quand la boucle atteint la 5ième itération, imprimer la constante Hello world
+
 ## Ressources 
 Pleins d'exemple en go disponible ici : https://gobyexample.com/
