@@ -1,8 +1,8 @@
 package ifi
 
 import (
-	"github.com/bnjjj/go_api/controllers/ifi"
-	"github.com/bnjjj/go_api/routes"
+	"github.com/oupsla/IFI-Gorilla/controllers/ifi"
+	"github.com/oupsla/IFI-Gorilla/routes"
 )
 
 func GetRoutes() []routes.Route {

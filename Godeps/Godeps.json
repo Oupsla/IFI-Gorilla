@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/bnjjj/go_api",
+	"ImportPath": "github.com/oupsla/IFI-Gorilla",
 	"GoVersion": "go1.7",
 	"GodepVersion": "v75",
 	"Deps": [

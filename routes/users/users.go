@@ -1,8 +1,8 @@
 package users
 
 import (
-	"github.com/bnjjj/go_api/controllers/users"
-	"github.com/bnjjj/go_api/routes"
+	"github.com/oupsla/IFI-Gorilla/controllers/users"
+	"github.com/oupsla/IFI-Gorilla/routes"
 )
 
 func GetRoutes() []routes.Route {

@@ -1,8 +1,8 @@
 package ifi
 
 import (
-	"github.com/bnjjj/go_api/blackbox"
-	"github.com/bnjjj/go_api/utils"
+	"github.com/oupsla/IFI-Gorilla/blackbox"
+	"github.com/oupsla/IFI-Gorilla/utils"
 
 	"net/http"
 )
@@ -17,5 +17,4 @@ func Welcome(res http.ResponseWriter, req *http.Request) {
 	}
 
 	utils.SendJSON(res, welcomeResponse)
-	return
 }

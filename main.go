@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/bnjjj/go_api/routes"
-	"github.com/bnjjj/go_api/routes/ifi"
-	"github.com/bnjjj/go_api/routes/users"
+	"github.com/oupsla/IFI-Gorilla/routes"
+	"github.com/oupsla/IFI-Gorilla/routes/ifi"
+	"github.com/oupsla/IFI-Gorilla/routes/users"
 
 	"github.com/gorilla/mux"
 

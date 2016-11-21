@@ -1,8 +1,8 @@
 package users
 
 import (
-	//"github.com/bnjjj/go_api/models/user"
-	"github.com/bnjjj/go_api/utils"
+	//"github.com/oupsla/IFI-Gorilla/models/user"
+	"github.com/oupsla/IFI-Gorilla/utils"
 
 	"net/http"
 	"strings"
