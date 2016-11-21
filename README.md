@@ -14,7 +14,7 @@ tar xvf go1.7.3.linux-amd64.tar.gz
 Déplacement :
 ```
 mkdir $HOME/bin
-mv go /$HOME/bin
+mv go $HOME/bin
 ```
 
 Ajout au profile (ou .bashrc)
@@ -24,7 +24,7 @@ vim ~/.bashrc
 ```
 export GOPATH=$HOME/golang
 export GOROOT=$HOME/bin/go
-export PATH=/$HOME/bin/go/bin:$GOPATH/bin:$PATH
+export PATH=$HOME/bin/go/bin:$GOPATH/bin:$PATH
 ```
 ```
 source ~/.bashrc
