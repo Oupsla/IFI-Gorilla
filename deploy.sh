@@ -9,6 +9,7 @@ pkgSystemName=`echo "$pkgSystemName" | tr / _`
 
 pkgDirectory=$GOPATH/pkg/$pkgSystemName/$projectName
 rm -Rf $pkgDirectory
+mkdir -p $pkgDirectory
 cp -r $generatedDirs $pkgDirectory
 
 echo "Binary package copied in $pkgDirectory"
