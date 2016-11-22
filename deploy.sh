@@ -1,5 +1,5 @@
 #! /bin/bash
-generatedDirs=("bin/blackbox")
+generatedDirs=("bin/blackbox.a")
 projectName=$(basename $(pwd))
 
 goversion=`go version`
