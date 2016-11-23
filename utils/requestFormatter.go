@@ -1,6 +1,8 @@
 package utils
 
 import (
+	"github.com/gorilla/mux"
+
 	"encoding/json"
 	"net/http"
 	"os/exec"
@@ -36,4 +38,17 @@ func MakeCommand(name string, args []string) (string, error) {
 	response, err := customCmd.Output()
 
 	return string(response), err
+}
+
+// GetJSONContent returns the JSON content of a request
+func GetJSONContent(v interface{}, r *http.Request) error {
+	defer r.Body.Close()
+	return json.NewDecoder(r.Body).Decode(v)
+}
+
+// ParamAsString returns an URL parameter /{name} as a string
+func ParamAsString(name string, r *http.Request) string {
+	vars := mux.Vars(r)
+	value := vars[name]
+	return value
 }

@@ -3,7 +3,6 @@ package main
 import (
 	"github.com/oupsla/IFI-Gorilla/routes"
 	"github.com/oupsla/IFI-Gorilla/routes/ifi"
-	"github.com/oupsla/IFI-Gorilla/routes/users"
 
 	"github.com/gorilla/mux"
 
@@ -14,7 +13,6 @@ import (
 func getAllRoutes() []routes.Route {
 	Routes := []routes.Route{}
 
-	Routes = append(Routes, users.GetRoutes()...)
 	Routes = append(Routes, ifi.GetRoutes()...)
 
 	return Routes
