@@ -26,7 +26,6 @@ La base est découpée comme suit:
 
 ### Build l'API
 ```bash
-$ make dependencies
 $ ./deploy.sh
 ```
 
