@@ -31,6 +31,7 @@ $ ./deploy.sh
 ```
 
 ### Lancer l'API
+**A chaque changement** vous devez couper l'API et la relancer grâce à :
 ```bash
 $ make start
 ```
